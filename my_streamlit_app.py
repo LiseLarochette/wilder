@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from datetime import datetime
+import numpy as np
 
 st.title('Application de Lise LAROCHETTE')
 
@@ -36,15 +36,11 @@ if st.button("Filtrer par continent 'Japan.'"):
 
 
 #afficher un graphique en bar
-st.title("Distribution de la puissance (cylindres) par continent")
+st.title("Puissance des voitures (cylindres) par nationalité")
 st.bar_chart(data=df_voitures, x='continent', y='cylinders')
 st.write("On remarque que les voitures américaines sont les plus puissantes.")
-#afficher un graphique en courbe
-import numpy as np
 
-st.title("Distribution de la consommation en fonction de la puissance (cylindres)")
+#afficher un graphique en courbe
+st.title("Consommation des voitures en fonction de la puissance (cylindres)")
 st.line_chart(data=df_voitures, x= 'weightlbs', y='mpg')
 st.write("On remarque que les voitures qui ont un poids entre 2000 et 2800 lbs consomment le plus.")
-
-
-

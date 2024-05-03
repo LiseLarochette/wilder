@@ -23,7 +23,7 @@ selected_continent = st.selectbox("Sélectionnez un continent :", df_voitures['c
 df_filtered = df_voitures[df_voitures['continent'] == selected_continent]
 
 # Afficher le DataFrame filtré
-st.write("DataFrame filtré :")
+st.write("Votre sélection :")
 st.write(df_filtered)
 
 #afficher un graphique en bar

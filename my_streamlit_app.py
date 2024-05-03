@@ -4,7 +4,7 @@ import numpy as np
 
 st.title('Application de Lise LAROCHETTE')
 
-st.write("Dataframe")
+st.write("Base de données des voitures par continent")
 
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_voitures = pd.read_csv(link)

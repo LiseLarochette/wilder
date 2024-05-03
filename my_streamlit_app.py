@@ -4,10 +4,6 @@ import numpy as np
 
 st.title('Application de Lise LAROCHETTE')
 
-st.metric(label="voitures", value=4, delta=-0.5,
-    delta_color="inverse")
-
-
 st.write("Base de données des voitures par continent")
 
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"

@@ -17,10 +17,10 @@ df_voitures
 import streamlit as st
 
 # Sélectionnez la colonne 'continent'
-selected_continent = st.selectbox("Sélectionnez un continent :", df['continent'].unique())
+selected_continent = st.selectbox("Sélectionnez un continent :", df_voitures['continent'].unique())
 
 # Filtrer le DataFrame en fonction du continent sélectionné
-df_filtered = df[df['continent'] == selected_continent]
+df_filtered = df_voitures[df_voitures['continent'] == selected_continent]
 
 # Afficher le DataFrame filtré
 st.write("DataFrame filtré :")

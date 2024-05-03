@@ -14,26 +14,17 @@ df_voitures
 
 
 #créer un filtre
+import streamlit as st
 
-# Créer un bouton pour filtrer par continent "Europe."
-if st.button("Filtrer par continent 'Europe.'"):
-    df_filtered = df_voitures[df_voitures['continent'].str.contains('Europe')]
-    # Afficher le DataFrame filtré
-    st.write("DataFrame après le filtre :")
-    st.write(df_filtered)
+# Sélectionnez la colonne 'continent'
+selected_continent = st.selectbox("Sélectionnez un continent :", df['continent'].unique())
 
-if st.button("Filtrer par continent 'US.'"):
-    df_filtered = df_voitures[df_voitures['continent'].str.contains('US')]
-    # Afficher le DataFrame filtré
-    st.write("DataFrame après le filtre :")
-    st.write(df_filtered)
+# Filtrer le DataFrame en fonction du continent sélectionné
+df_filtered = df[df['continent'] == selected_continent]
 
-if st.button("Filtrer par continent 'Japan.'"):
-    df_filtered = df_voitures[df_voitures['continent'].str.contains('Japan')]
-    # Afficher le DataFrame filtré
-    st.write("DataFrame après le filtre :")
-    st.write(df_filtered)
-
+# Afficher le DataFrame filtré
+st.write("DataFrame filtré :")
+st.write(df_filtered)
 
 #afficher un graphique en bar
 st.title("Puissance des voitures (cylindres) par nationalité")

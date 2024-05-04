@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Analyse d'une base de données')
+st.title("Analyse d'une base de données")
 st.write("Lise LAROCHETTE")
 
 st.write("Base de données")

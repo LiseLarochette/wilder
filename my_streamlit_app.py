@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-st.title('Application de Lise LAROCHETTE')
+st.title('Analyse d'une base de données')
+st.write("Lise LAROCHETTE")
 
-st.write("Base de données des voitures par continent")
+st.write("Base de données")
 
 link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_voitures = pd.read_csv(link)

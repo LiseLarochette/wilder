@@ -11,13 +11,7 @@ link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_voitures = pd.read_csv(link)
 
 
-your-repository/
-├── pages/
-│   ├── page_1.py
-│   └── page_2.py
-└── your_app.py
-
-  import streamlit as st
+import streamlit as st
 
 st.https://wilder.streamlit.app/("your_app.py", label="Home", icon="🏠")
 st.https://wilder.streamlit.app/("pages/page_1.py", label="Page 1", icon="1️⃣")

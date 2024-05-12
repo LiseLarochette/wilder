@@ -3,25 +3,12 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-def accueil():
-    st.title("Page d'Accueil")
-    st.write("Bienvenue sur la page d'accueil !")
+import streamlit as st
 
-def visualisation_donnees():
-    st.title("Visualisation des Données")
-    st.write("Ici, vous pouvez visualiser vos données.")
-
-def main():
-    st.sidebar.title("Menu Principal")
-    selection = st.sidebar.radio("Go to", ["Accueil", "Visualisation des Données"])
-
-    if selection == "Accueil":
-        accueil()
-    elif selection == "Visualisation des Données":
-        visualisation_donnees()
-
-if __name__ == "__main__":
-    main()
+st.page_link("your_app.py", label="Home", icon="🏠")
+st.page_link("pages/page_1.py", label="Page 1", icon="1️⃣")
+st.page_link("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
+st.page_link("http://www.google.com", label="Google", icon="🌎")
 
 
 st.title("Analyse d'une base de données")

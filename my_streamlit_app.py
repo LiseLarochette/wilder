@@ -11,16 +11,11 @@ link = "https://raw.githubusercontent.com/murpi/wilddata/master/quests/cars.csv"
 df_voitures = pd.read_csv(link)
 
 
-
 your-repository/
-├── .streamlit/
-│   └── config.toml
 ├── pages/
-│   ├── admin.py
-│   ├── super-admin.py
-│   └── user.py
-├── menu.py
-└── app.py
+│   ├── page_1.py
+│   └── page_2.py
+└── your_app.py
 
 #afficher la DF
 df_voitures

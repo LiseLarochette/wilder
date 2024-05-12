@@ -3,15 +3,25 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-# Titre de la page
-st.title("Ma première application Streamlit")
+def accueil():
+    st.title("Page d'Accueil")
+    st.write("Bienvenue sur la page d'accueil !")
 
-# Zone de texte pour l'utilisateur
-user_input = st.text_input("Entrez votre texte ici :")
+def visualisation_donnees():
+    st.title("Visualisation des Données")
+    st.write("Ici, vous pouvez visualiser vos données.")
 
-# Bouton pour soumettre
-if st.button("Valider"):
-    st.write("Vous avez saisi :", user_input)
+def main():
+    st.sidebar.title("Menu Principal")
+    selection = st.sidebar.radio("Go to", ["Accueil", "Visualisation des Données"])
+
+    if selection == "Accueil":
+        accueil()
+    elif selection == "Visualisation des Données":
+        visualisation_donnees()
+
+if __name__ == "__main__":
+    main()
 
 
 st.title("Analyse d'une base de données")

@@ -13,10 +13,10 @@ df_voitures = pd.read_csv(link)
 
 import streamlit as st
 
-st.https://wilder.streamlit.app/("your_app.py", label="Home", icon="🏠")
-st.https://wilder.streamlit.app/("pages/page_1.py", label="Page 1", icon="1️⃣")
-st.https://wilder.streamlit.app/("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
-st.https://wilder.streamlit.app/("http://www.google.com", label="Google", icon="🌎")
+st.wilder.streamlit.app/("your_app.py", label="Home", icon="🏠")
+st.wilder.streamlit.app/("pages/page_1.py", label="Page 1", icon="1️⃣")
+st.wilder.streamlit.app/("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
+st.wilder.streamlit.app/("http://www.google.com", label="Google", icon="🌎")
 
 #afficher la DF
 df_voitures

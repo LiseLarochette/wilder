@@ -3,10 +3,16 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-st.page_link("my_streamlit_app.py", label="Home", icon="🏠")
-st.page_link("pages/page_1.py", label="Page 1", icon="1️⃣")
-st.page_link("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
-st.page_link("http://www.google.com", label="Google", icon="🌎")
+# Titre de la page
+st.title("Ma première application Streamlit")
+
+# Zone de texte pour l'utilisateur
+user_input = st.text_input("Entrez votre texte ici :")
+
+# Bouton pour soumettre
+if st.button("Valider"):
+    st.write("Vous avez saisi :", user_input)
+
 
 st.title("Analyse d'une base de données")
 st.write("Lise LAROCHETTE")

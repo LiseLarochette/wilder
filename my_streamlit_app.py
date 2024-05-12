@@ -17,6 +17,13 @@ your-repository/
 │   └── page_2.py
 └── your_app.py
 
+  import streamlit as st
+
+st.https://wilder.streamlit.app/("your_app.py", label="Home", icon="🏠")
+st.https://wilder.streamlit.app/("pages/page_1.py", label="Page 1", icon="1️⃣")
+st.https://wilder.streamlit.app/("pages/page_2.py", label="Page 2", icon="2️⃣", disabled=True)
+st.https://wilder.streamlit.app/("http://www.google.com", label="Google", icon="🌎")
+
 #afficher la DF
 df_voitures
 
